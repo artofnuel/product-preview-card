@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <title>ArtofNuel | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-cream">
+  <section id="productcard" class="my-16">
+    <!-- Flex Container -->
+    <div class="container flex flex-col max-w-lg mx-auto md:flex-row md:max-w-3xl md:max-h-70">
+      <!-- Image -->
+      <div class="w-full h-80 md:h-full">
+        <img class="h-full w-full object-cover rounded-t-lg md:rounded-none md:rounded-l-lg md:h-full md:w-full" src="images/image-product-desktop.jpg" alt="" >
+      </div>
+      <!-- Headings and Button -->
+      <div class="flex flex-col w-full justify-between p-8 space-y-6 bg-white h-94 rounded-b-lg md:rounded-none md:rounded-r-lg md:max-w-2xl md:max-h-70">
+        <h3 class="font-mont font-normal text-darkGrayishBlue tracking-widest text-2xl">PERFUME</h3>
+        <h1 class="font-fraun text-5xl text-veryDarkBlue">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="font-mont text-lg text-darkGrayishBlue">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <!-- Prices -->
+        <div class="flex items-center space-x-4">
+          <h2 class="font-fraun text-4xl text-darkCyan">$149.99</h2>
+          <h2 class="font-fraun text-lg text-darkGrayishBlue line-through">$169.99</h2>
+        </div>
+        <button class="flex items-center justify-center space-x-6 p-4 px-4 rounded-md bg-darkCyan font-mont font-bold text-white text-xl">
+          <img class="w-5 h-5 mr-4" src="images/icon-cart.svg" alt="">
+          Add to Cart
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Preview
+
+
+  
+
+  $149.99
+  $169.99
+
+  Add to Cart -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
